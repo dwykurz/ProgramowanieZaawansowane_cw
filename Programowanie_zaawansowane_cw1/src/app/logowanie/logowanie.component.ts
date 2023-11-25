@@ -25,4 +25,10 @@ export class LogowanieComponent implements OnInit {
     }
   }
 
+login(){
+  this.authService.login();
+  //Przekieruj na dashboard po zalogowaniu
+  this.router.navigate(['/dashboard']);
+}
+
 }
